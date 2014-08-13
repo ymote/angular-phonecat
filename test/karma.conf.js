@@ -22,12 +22,19 @@ module.exports = function(config){
     plugins : [
             'karma-chrome-launcher',
             'karma-phantomjs-launcher',
-            'karma-jasmine'
+            'karma-jasmine',
+            'karma-htmlfile-reporter'
             ],
 
     junitReporter : {
       outputFile: 'test_out/unit.xml',
       suite: 'unit'
+    },
+
+    reporters: ['progress', 'html'],
+
+    htmlReporter: {
+      outputFile: 'test_out/units.html'
     }
 
   });
