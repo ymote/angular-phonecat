@@ -22,7 +22,7 @@
     "postinstall": "bower install --allow-root",
 
     "prestart": "npm install",
-    "server": "http-server -p 8000",
+    "server": "http-server -a 0.0.0.0 -p 8000",
 
     "pretest": "npm install",
     "test": "node node_modules/karma/bin/karma start test/karma.conf.js",
