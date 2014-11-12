@@ -27,13 +27,20 @@ describe('PhoneCat App', function() {
     });
 
     //增加测试模块
+    it('should display the current filter value within an element with id "status"',
+      function() {
+
+      var query = element(by.model('query'));
+
+      expect(element(by.css('#status')).getText())
+        .toMatch(/Current filter:\s*$/);
+
+      query.clear();
+      query.sendKeys('nexus');
+      expect(element(by.css('#status')).getText())
+        .toMatch(/Current filter: nexus\s*$/);
+    });
 
 
-
-
-
-
-
-    
   });
 });
