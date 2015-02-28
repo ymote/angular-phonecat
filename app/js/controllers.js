@@ -15,5 +15,5 @@ phonecatApp.controller('PhoneListCtrl', function($scope) {
   ];
 
   //增加$scope.hello数据模型
-  
+  $scope.hello = 'Hello, World!'
 });
