@@ -5,7 +5,8 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />    
-  <title>Google Phone Gallery</title>
+  <!-- 将搜索关键词显示在标题上 -->
+  <title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
   <link rel="stylesheet" href="lib/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="lib/angular.js"></script>
@@ -19,10 +20,9 @@
         <!--Sidebar content-->
 
         Search: <input ng-model="query">
-
-        <div id="status"> 
-          <!-- 一个query绑定，再加上Current filter:前缀 -->
-        </div>
+        <p class="query">
+        输入的关键词是： {{query}}
+        </p>
 
       </div>
       <div class="col-md-10">
