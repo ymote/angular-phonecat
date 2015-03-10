@@ -14,6 +14,6 @@ phonecatApp.controller('PhoneListCtrl', function($scope) {
      'snippet': 'The Next, Next Generation tablet.'}
   ];
 
-  $scope.numbers = [0, 1, 2, 3, 4, 5, 6, 7];
-
+  //增加$scope.hello数据模型
+  $scope.hello = 'Hello, World!'
 });

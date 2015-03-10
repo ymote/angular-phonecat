@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Expires" content="0" />  
   <title>Google Phone Gallery</title>
   <link rel="stylesheet" href="lib/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
@@ -20,13 +20,17 @@
     </li>
   </ul>
 
-  <table class="table table-bordered table-striped">
-    <tr><th>row number</th></tr>
-    <!-- 用ng-repeat 迭代器遍历$scope.numbers -->
-    <tr ng-repeat="yyy in numbers">
-      <td>{{yyy}}</td>
-    </tr>
-  </table>
+  <p>
+    <!-- 输入所有电话的总数 -->
+    <p>Total number of phones: {{phones.length}}</p>
+
+  </p>
+
+  <p class="hello">
+    <!-- 输出$scope.hello -->
+    {{hello}}
+    
+  </p>
 
 </body>
 </html>
